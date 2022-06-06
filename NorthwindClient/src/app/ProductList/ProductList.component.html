@@ -1,0 +1,15 @@
+<div class="content">
+  <h2>List of Ten Expensive Products</h2>
+  <table id="products"class="table table-bordered table-light">
+<tr>
+  <th scope="col">Id</th>
+  <th scope="col">Product Name </th>
+  <th scope="'col"> Price </th>
+</tr>
+<tr *ngFor="let product of loadedProducts; let no =index" >
+<td>{{no+1}}</td>
+<td>{{product.productName}}</td>
+<td>{{product.unitPrice}}</td>
+</tr>
+  </table>
+</div>
